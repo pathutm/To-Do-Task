@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Task Scheduler</h1>
+
+        <form id="taskForm">
+            <input type="text" id="title" placeholder="Task Title" required>
+            <textarea id="description" placeholder="Task Description" required></textarea>
+            <input type="datetime-local" id="scheduledTime" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <button type="submit" id="create">Create Task</button>
+        </form>
+
+        <button id="getTasksBtn">Get All Tasks</button>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
